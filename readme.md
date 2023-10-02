@@ -5,7 +5,7 @@
 *Martijn Gerritsen*, oktober 2023
 <hr>
 
-<img src="sonarqube-logo-blue.png" width="500" style="float: right"/>
+<img src="images/sonarqube-logo-blue.png" width="500" style="float: right"/>
 
 Ik volg momenteel de minor DevOps op de HAN. Voor deze minor moet ik een onderzoek doen naar een DevOps tool. Ik heb gekozen voor Sonarqube. In dit document zal ik mijn onderzoek beschrijven.
 
