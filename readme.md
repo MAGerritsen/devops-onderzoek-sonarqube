@@ -35,22 +35,50 @@ SonarQube integreert naadloos met DevOps-tools en -workflows voor Continuous Int
 - Mogelijke vertraging: Onjuist gebruik van SonarQube kan ontwikkelaars afleiden van hun hoofdtaken, waardoor ontwikkelingstijden langer worden in plaats van korter in een DevOps-perspectief.
 - Hulpmiddelenharmonisatie: Het kan nodig zijn om de DevOps-toolstack aan te passen of te harmoniseren om optimaal van SonarQube te profiteren, wat extra inspanningen vereist voor integratie in bestaande workflows.
 
-## Hoe start je Sonarqube op en configureer je het?
-Het opstarten en configureren van SonarQube vereist een zorgvuldige aanpak om ervoor te zorgen dat de tool effectief is in het analyseren van codekwaliteit en beveiliging. Hier is een algemene richtlijn:
+## Je project koppelen aan Sonarqube
+Nu het duidelijk is wat Sonarqube is en kan doen, is het tijd om te kijken hoe je een project kan koppelen aan Sonarqube. In dit voorbeeld zal ik een project koppelen aan Sonarqube en de resultaten bekijken.
 
-1. Installeren en opstarten: Begin met het downloaden van de SonarQube-distributie die overeenkomt met je systeemvereisten. Installeer het op een server die toegankelijk is voor ontwikkelingsteams. Start de SonarQube-server door het juiste script of de service te activeren.
-2. Toegang en configuratie: Ga naar de SonarQube-webinterface via de aangegeven URL (standaard is dit `http://localhost:9000`). Log in als beheerder (standaardgegevens zijn admin/admin). Wijzig het standaardwachtwoord onmiddellijk.
-3. Projecten en broncode: Definieer de projecten die je wilt analyseren in SonarQube. Dit kan handmatig of via integratie met je CI/CD-platform plaatsvinden. Zorg ervoor dat de broncode van je project beschikbaar is voor de SonarQube-server.
-4. Analyse uitvoeren: Voer een codeanalyse uit op de geselecteerde projecten. Dit kan handmatig met behulp van de SonarScanner of automatisch als onderdeel van je CI/CD-pijplijn.
-5. Regels en kwaliteitsprofielen: Configureer de regels en kwaliteitsprofielen die relevant zijn voor je project. Dit helpt SonarQube bij het identificeren van problemen in je broncode.
-6. Resultaten bekijken: Bekijk de analyseresultaten via de webinterface. SonarQube genereert rapporten over codekwaliteit, beveiliging en prestaties, waardoor je inzicht krijgt in potentiële problemen.
-7. Integratie in DevOps: Integreer SonarQube met je CI/CD-tools en workflows, zodat code-analyses automatisch worden uitgevoerd bij elke build of codecommit. Dit verzekert een continue monitoring van codekwaliteit.
-8. Onderhoud en optimalisatie: Regelmatig onderhoud van SonarQube is essentieel. Houd de tool en plugins up-to-date en pas configuraties aan naarmate je projecten evolueren.
+### Stap 0: Vereisten
+Om Sonarqube te kunnen gebruiken heb je het volgende nodig:
+- Een JDK (Java Development Kit) versie 11 of hoger.
+- Minimaal 2GB RAM beschikbaar.
+- Minimaal 1GB vrije schijfruimte.
 
-Het succesvol opzetten en configureren van SonarQube vereist aandacht voor detail en een goede afstemming op de behoeften van je ontwikkelingsomgeving. Het biedt echter waardevolle inzichten om codekwaliteit te verbeteren en beveiligingslekken te identificeren, wat gunstig is voor zowel ontwikkelingsteams als DevOps-initiatieven.
+### Stap 1: Sonarqube downloaden
+Via de officiële website van Sonarqube kan je de laatste versie [downloaden](https://www.sonarqube.org/downloads/). In dit voorbeeld is de Community Edition gebruikt.
+
+### Stap 2: Sonarqube configureren
+Na het downloaden van Sonarqube moet het geconfigureerd worden. Doe dit door het volgende te doen:
+- Pak het ZIP-bestand uit naar de gewenste locatie.
+- Open het bestand `sonarqube-<versie>/conf/sonar.properties` en pas de volgende regels aan:
+    - `sonar.jdbc.username` en `sonar.jdbc.password` om de databasegebruikersnaam en het wachtwoord in te stellen.
+    - `sonar.jdbc.url` om de JDBC-URL van de database in te stellen.
+    - Sla het bestand op.
+
+### Stap 3: Sonarqube starten
+Om Sonarqube te starten moet je het volgende doen:
+- Open een terminal en navigeer naar de uitgepakte map.
+- Start de server met het commando `bin/[OS]/sonar.sh console` (Linux) of `bin/[OS]/StartSonar.bat` (Windows).
+- Wacht tot de server is gestart. De voortgang kan gecontroleerd worden door het bestand `logs/sonar.log` te bekijken.
+
+### Stap 4: Sonarqube openen in de browser
+Om Sonarqube te openen in de browser moet je het volgende doen:
+- Open een browser en ga naar `http://localhost:9000`.
+- Log in met de standaard inloggegevens:
+    - Gebruikersnaam: `admin`
+    - Wachtwoord: `admin`
+- Wijzig hierna je wachtwoord, dit wordt aangegeven.
+
+
+### Stap 5: Project toevoegen
+Om een project toe te voegen moet je het volgende doen:
+- Klik op het plusje in de linkerbovenhoek.
+- Klik op `Create new project`.
+- Voeg je eigen project toe door de instructies te volgen.
 
 # Conclusie
 SonarQube is een krachtige tool voor statische code-analyse die een essentiële rol speelt binnen het bredere DevOps-ecosysteem. Het fungeert als een kritische hoeksteen voor het waarborgen van codekwaliteit en beveiliging in softwareontwikkelingsprojecten. SonarQube analyseert de broncode van applicaties op zoek naar potentieel problematische patronen, codegebreken en veiligheidskwetsbaarheden. Door dit in een vroeg stadium van de ontwikkelingscyclus te doen, helpt het DevOps-teams om sneller en effectiever fouten op te sporen en op te lossen, waardoor de totale kosten van softwareonderhoud worden verminderd en de kwaliteit van de software wordt verbeterd. Daarnaast biedt SonarQube uitgebreide rapportage- en monitoringfuncties, waardoor DevOps-teams in staat zijn om hun codebase continu te verbeteren en te voldoen aan de best practices op het gebied van codekwaliteit en beveiliging. Kortom, SonarQube speelt een cruciale rol in het ondersteunen van de DevOps-praktijken door te zorgen voor een solide basis van codekwaliteit en beveiliging gedurende de hele levenscyclus van softwareontwikkeling.
 
 # Bronnen
 - ChatGPT. (z.d.). ChatGPT. https://chat.openai.com/
+- https://docs.sonarsource.com/sonarqube/latest/
