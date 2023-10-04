@@ -1,5 +1,3 @@
-<link href="style.css" rel="stylesheet"></link>
-
 # Kwaliteit boven kwantiteit; Sonarqube
 
 *Martijn Gerritsen*, oktober 2023
