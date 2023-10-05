@@ -2,7 +2,7 @@
 
 *Martijn Gerritsen*, oktober 2023
 
-<img style="z-index:99999999" align="right" width="400" src="images/SonarQube-logo-blue.png"/>
+<img style="z-index:99999999" align="right" width="400" src="images/sonarqube-logo-blue.png"/>
 <hr>
 
 Ik volg momenteel de minor DevOps op de HAN. Voor deze minor moet ik een onderzoek doen naar een DevOps tool. Ik heb gekozen voor SonarQube. In dit document zal ik mijn onderzoek/blog beschrijven. In een apart bestand `onderzoeksplan.md` vertel ik wat mijn hoofd- en deelvragen zijn, wie de doelgroep is en wat mijn aanpak is.
