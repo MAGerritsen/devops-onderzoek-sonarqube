@@ -5,7 +5,7 @@
 <img style="z-index:99999999" align="right" width="400" src="images/SonarQube-logo-blue.png"/>
 <hr>
 
-Ik volg momenteel de minor DevOps op de HAN. Voor deze minor moet ik een onderzoek doen naar een DevOps tool. Ik heb gekozen voor SonarQube. In dit document zal ik mijn onderzoek beschrijven.
+Ik volg momenteel de minor DevOps op de HAN. Voor deze minor moet ik een onderzoek doen naar een DevOps tool. Ik heb gekozen voor SonarQube. In dit document zal ik mijn onderzoek/blog beschrijven. In een apart bestand `onderzoeksplan.md` vertel ik wat mijn hoofd- en deelvragen zijn, wie de doelgroep is en wat mijn aanpak is.
 
 Het doel van dit onderzoek is om te bestuderen/testen of SonarQube een goede tool is om te gebruiken in een DevOps omgeving. Ook wordt er gekeken of deze tool eventueel gebruikt kan worden in een kleinschalig DevOps project. In deze context zou SonarQube gebruikt kunnen worden om de kwaliteit van de code te verbeteren.
 
