@@ -1,6 +1,6 @@
 # Kwaliteit boven kwantiteit; SonarQube
 
-*Martijn Gerritsen*, oktober 2023
+*Martijn Gerritsen*, november 2023
 
 <img style="z-index:99999999" align="right" width="400" src="images/sonarqube-logo-blue.png"/>
 <hr>
