@@ -13,21 +13,27 @@ Allereerst een korte uitleg over wat SonarQube is, hierna volgt een uitleg over 
 
 ## Wat is SonarQube?
 
-SonarQube is een uiterst krachtige softwaretool die een onmisbare rol vervult in het brede spectrum van het DevOps-ecosysteem. Het fungeert als een cruciale pijler voor het waarborgen van codekwaliteit en de beveiliging van softwareontwikkelingsprojecten. Deze tool is in staat om diepgaande statische code-analyses uit te voeren, waardoor het mogelijk is om de broncode van applicaties tot in detail te doorgronden. Hierbij ligt de nadruk op het identificeren van potentieel problematische patronen, het opsporen van codegebreken en het aan het licht brengen van veiligheidskwetsbaarheden *(What Is SonarQube?, 2023b)*.
+SonarQube is een krachtige softwaretool die een goede rol speelt in het gebied van DevOps. Het wordt gebruikt als een tool voor het waarborgen van codekwaliteit en beveiliging in softwareontwikkelingsprojecten. Deze tool voert diepgaande analyses van de geschreven code uit, waardoor het mogelijk is om de broncode van softwareprogramma's tot in de kleinste details te begrijpen. Het belangrijkste doel is om mogelijke problemen in de code op te sporen en te benoemen, zoals fouten, slechte gewoonten en beveiligingslekken.
 
-Wat SonarQube uniek maakt, is zijn vermogen om deze analyse al in een vroeg stadium van de ontwikkelingscyclus uit te voeren. Hierdoor wordt het DevOps-teams mogelijk gemaakt om fouten sneller en efficiënter op te sporen en aan te pakken. Dit heeft een directe impact op het verlagen van de algehele kosten voor softwareonderhoud, terwijl tegelijkertijd de kwaliteit van de ontwikkelde software wordt verhoogd. Daarnaast biedt SonarQube uitgebreide rapportage- en monitoringfuncties, waardoor DevOps-teams voortdurend kunnen werken aan de verbetering van hun codebase en kunnen voldoen aan de hoogste standaarden voor codekwaliteit en beveiliging.
+SonarQube voert zogenaamde "statische code-analyses" uit. Dit betekent dat het de code bekijkt zonder deze daadwerkelijk uit te voeren. Het zoekt naar problemen zoals ontbrekende stukjes code, verkeerde instructies, of zwakke plekken waar kwaadwillenden kunnen binnendringen. Als SonarQube klaar is, geeft het een gedetailleerd rapport met informatie over wat er in de code moet worden verbeterd. De analyse die SonarQube biedt, is als een röntgenfoto van de code. Het toont de zwakke plekken en problemen die anders verborgen zouden blijven. Dit helpt programmeurs om hun code te verbeteren en ervoor te zorgen dat deze goed werkt.
 
-Kortom, SonarQube vervult een cruciale rol binnen DevOps-praktijken door te zorgen voor een stevige basis van codekwaliteit en beveiliging gedurende de volledige levenscyclus van softwareontwikkeling. Deze softwaretool is van onschatbare waarde voor organisaties die streven naar efficiëntere, veiligere, en kwalitatief hoogwaardige softwareontwikkeling.
+Wat SonarQube uniek maakt, is zijn vermogen om deze analyse al in een vroeg stadium van het ontwikkelingsproces uit te voeren. Hierdoor krijgen DevOps-teams de kans om fouten sneller en efficiënter op te sporen en op te lossen. Dit heeft directe voordelen, zoals het verminderen van de totale kosten voor softwareonderhoud en het verbeteren van de kwaliteit van de ontwikkelde software. Bovendien biedt SonarQube uitgebreide rapportage- en security-funcites, waarmee DevOps-teams voortdurend kunnen werken aan het verbeteren van hun code en kunnen voldoen aan de hoogste normen voor codekwaliteit en veiligheid.
+
+De tool zoekt naar allerlei problematische patronen in de code. Het kan bijvoorbeeld onveilige wachtwoorden, verwarrende namen van variabelen of dubbele stukken code vinden. Deze patronen kunnen leiden tot fouten in het programma of beveiligingslekken *(What Is SonarQube?, 2023b)*.
+
+Wat betreft codegebreken identificeert SonarQube verschillende soorten fouten en problemen in de code. Het kan wijzen op ontbrekende stukken code, ongebruikte code, inefficiënte instructies, en nog veel meer. Het doel is om programmeurs te helpen deze codegebreken op te sporen en te herstellen voordat ze problemen veroorzaken in de software.
+
+SonarQube vervult dus een belangrijke rol binnen DevOps-praktijken door te zorgen voor een sterke basis van codekwaliteit en beveiliging gedurende de gehele levenscyclus van softwareontwikkeling. Deze softwaretool is van grote waarde voor organisaties die streven naar efficiëntere, veiligere en hoogwaardige softwareontwikkeling.
 
 ## Hoe legt SonarQube de integratie met DevOps-tools en -workflows voor CI/CD?
 
-SonarQube onderscheidt zich als een uiterst waardevol instrument door de naadloze integratie die het mogelijk maakt met DevOps-tools en workflows voor Continuous Integration/Continuous Deployment (CI/CD). Het fundament van deze integratie ligt in de flexibiliteit en uitgebreide mogelijkheden van SonarQube om plug-ins en extensies te bieden voor een breed scala aan populaire CI/CD-platforms, zoals Jenkins, Azure DevOps en GitLab. Deze plug-and-play-aanpak stelt ontwikkelingsteams in staat om SonarQube eenvoudig en efficiënt te implementeren in hun bestaande CI/CD-pijplijnen. Het resultaat is een soepel geïntegreerd proces waarin code-analyses automatisch worden uitgevoerd als een geïntegreerd onderdeel van de softwareontwikkeling en levering, wat bijdraagt aan een aanzienlijke verbetering van de totale kwaliteit van de software *(Team, 2022b)*.
+SonarQube wordt veel gebruikt door de goede integratie die het mogelijk maakt met DevOps-tools en workflows voor Continuous Integration/Continuous Deployment (CI/CD). De basis van deze integratie ligt in de flexibiliteit en uitgebreide mogelijkheden van SonarQube om plug-ins en extensies te bieden voor een breed scala aan populaire CI/CD-platforms, zoals Jenkins, Azure DevOps en GitLab. Deze plug-and-play-aanpak stelt ontwikkelteams in staat om SonarQube eenvoudig en efficiënt te implementeren in hun bestaande CI/CD-pijplijnen. Het resultaat is een soepel geïntegreerd proces waarin code-analyses automatisch worden uitgevoerd als een geïntegreerd onderdeel van de softwareontwikkeling en levering, wat bijdraagt aan een goede verbetering van de totale kwaliteit van de software *(Team, 2022b)*.
 
 <img style="z-index:99999999" align="right" width="400" src="images/ci_cd_devops.png"/>
 
-Een essentieel aspect van deze integratie is de mogelijkheid van SonarQube om code-analyses automatisch te initiëren bij elke codecommit of build. Dit biedt ontwikkelaars de kans om directe en relevante feedback te ontvangen met betrekking tot codekwaliteit, beveiligingsproblemen en andere mogelijke kwetsbaarheden. De snelheid en nauwkeurigheid van deze analyses spelen een cruciale rol in het identificeren en aanpakken van potentiële problemen in een vroeg stadium van de ontwikkelingscyclus. Dit betekent dat ontwikkelingsteams in staat zijn om problemen te corrigeren voordat deze in de productieomgeving terechtkomen, waardoor de softwarekwaliteit wordt verhoogd en de operationele impact van bugs aanzienlijk wordt verminderd.
+Een belangrijk aspect van deze integratie is de mogelijkheid van SonarQube om code-analyses automatisch te initiëren bij elke codecommit of build. Dit biedt ontwikkelaars de kans om directe en relevante feedback te ontvangen met betrekking tot codekwaliteit, beveiligingsproblemen en andere mogelijke kwetsbaarheden. De precisie van deze analyses spelen een belangrijke rol in het identificeren en aanpakken van potentiële problemen in een vroeg stadium van de ontwikkelingscyclus. Dit betekent dat ontwikkelteams in staat zijn om problemen te corrigeren voordat deze in de productieomgeving terechtkomen, waardoor de softwarekwaliteit wordt verhoogd en de operationele impact van bugs aanzienlijk wordt verminderd.
 
-Tot slot is het van groot belang om te benadrukken dat SonarQube niet alleen fungeert als een losstaand hulpmiddel, maar eerder als een geïntegreerd onderdeel van het bredere DevOps-ecosysteem. Het ondersteunt de DevOps-filosofie van het verenigen van ontwikkelings- en operationele teams door zowel ontwikkelaars als operationele teams te voorzien van waardevolle inzichten en informatie om de codekwaliteit en beveiliging te waarborgen. Deze geïntegreerde benadering is van vitaal belang voor organisaties die streven naar een snelle en efficiënte softwareontwikkeling, waarbij zowel kwaliteit als veiligheid op de voorgrond staan. SonarQube is daarmee een onmisbaar instrument geworden voor moderne DevOps-praktijken en draagt in hoge mate bij aan de levering van betrouwbare en veilige softwareproducten.
+Tot slot is het van groot belang om te benadrukken dat SonarQube niet alleen gebruikt wordt als losstaand hulpmiddel, maar eerder als een geïntegreerd onderdeel van de bredere DevOps-omgeving. Het ondersteunt de DevOps-filosofie van het verenigen van ontwikkelings- en operationele teams door zowel ontwikkelaars als operationele teams te voorzien van waardevolle inzichten en informatie om de codekwaliteit en beveiliging te waarborgen. Deze geïntegreerde benadering is van belang voor organisaties die streven naar een snelle en efficiënte softwareontwikkeling, waarbij zowel kwaliteit als veiligheid op de voorgrond staan. SonarQube is daarmee een belangrijke tool geworden voor moderne DevOps-praktijken en draagt in hoge mate bij aan de levering van betrouwbare en veilige softwareproducten.
 
 ## Wat zijn de voor- en nadelen van SonarQube?
 
@@ -41,7 +47,7 @@ Tot slot is het van groot belang om te benadrukken dat SonarQube niet alleen fun
 ### Nadelen
 
 - Foutieve meldingen: SonarQube kan soms valse positieven genereren, wat tot verwarring en tijdsverspilling kan leiden voor ontwikkelaars in een snelle DevOps-omgeving.
-- Configuratiecomplexiteit: Het configureren van SonarQube voor specifieke projecten kan complex zijn en vereist aandacht, wat extra beheerwerk met zich meebrengt in een DevOps-ecosysteem.
+- Configuratiecomplexiteit: Het configureren van SonarQube voor specifieke projecten kan complex zijn en vereist aandacht, wat extra beheerwerk met zich meebrengt in een DevOps-omgeving.
 - Mogelijke vertraging: Onjuist gebruik van SonarQube kan ontwikkelaars afleiden van hun hoofdtaken, waardoor ontwikkelingstijden langer worden in plaats van korter in een DevOps-perspectief.
 - Hulpmiddelenharmonisatie: Het kan nodig zijn om de DevOps-toolstack aan te passen of te harmoniseren om optimaal van SonarQube te profiteren, wat extra inspanningen vereist voor integratie in bestaande workflows.
 
@@ -75,7 +81,7 @@ Na het downloaden van SonarQube moet het geconfigureerd worden. Doe dit door het
 
 #### Environment Variables
 
-Zorg ervoor dat je JAVA hebt geïnstalleerd en dat de `JAVA_HOME`-omgevingsvariabele is ingesteld op de map waarin de JDK is geïnstalleerd. Voeg vervolgens de `bin`-map van de JDK toe aan het `PATH`-systeemvariabele *(Kaharovic, 2021b)*.
+Zorg ervoor de `JAVA_HOME`-omgevingsvariabele is ingesteld op de map waarin de JDK is geïnstalleerd. Voeg vervolgens de `bin`-map van de JDK toe aan het `PATH`-systeemvariabele *(Kaharovic, 2021b)*.
 
 <img width="400" src="images/environment_variables.png"/>
 
@@ -110,11 +116,11 @@ Om een project toe te voegen moet je het volgende doen:
 <img width="400" src="images/sonarqube_create_new_project.png"/>
 
 ### Functionaliteit / Werking van SonarQube
-SonarQube biedt uitgebreide rapportages en inzichten over de kwaliteit van de code en eventuele kwetsbaarheden, waardoor ontwikkelingsteams in staat zijn om problemen op te sporen en aan te pakken, en de algemene kwaliteit van de software te verhogen. Het platform fungeert als een waardevol hulpmiddel om de DevOps-filosofie van continue verbetering te ondersteunen en codekwaliteit te integreren in de ontwikkelings- en implementatieprocessen. Zie hieronder een afbeelding van het dashboard van SonarQube.
+SonarQube biedt uitgebreide rapportages en inzichten over de kwaliteit van de code en eventuele kwetsbaarheden, waardoor ontwikkelteams in staat zijn om problemen op te sporen en aan te pakken, en de algemene kwaliteit van de software te verhogen. Het platform wordt gebruikt als een waardevol hulpmiddel om de DevOps-filosofie van continue verbetering te ondersteunen en codekwaliteit te integreren in de ontwikkelings- en implementatieprocessen. Zie hieronder een afbeelding van het dashboard van SonarQube.
 
 <img width="400" src="images/sonarqube_dashboard.png"/>
 
-Code smells in SonarQube zijn potentieel problematische stukken code die de leesbaarheid, onderhoudbaarheid en kwaliteit van software verminderen. SonarQube detecteert deze code smells door middel van geautomatiseerde statische code-analyse en rapporteert ze aan ontwikkelaars. Door code smells aan te pakken, kunnen ontwikkelingsteams de softwarekwaliteit verbeteren en toekomstige problemen vermijden. Hieronder is een voorbeeld te zien van een 'codesmell' in SonarQube.
+Code smells in SonarQube zijn potentieel problematische stukken code die de leesbaarheid, onderhoudbaarheid en kwaliteit van software verminderen. SonarQube detecteert deze code smells door middel van geautomatiseerde statische code-analyse en rapporteert ze aan ontwikkelaars. Door code smells aan te pakken, kunnen ontwikkelteams de softwarekwaliteit verbeteren en toekomstige problemen vermijden. Hieronder is een voorbeeld te zien van een 'codesmell' in SonarQube.
 
 <img width="400" src="images/code_smell_example.png"/>
 
@@ -124,16 +130,16 @@ Dit onderzoek heeft zich gericht op de evaluatie van SonarQube als een DevOps-to
 
 De voordelen van SonarQube omvatten verbeteringen in codekwaliteit en beveiliging, vroege foutopsporing, geautomatiseerde integratie en de bevordering van samenwerking tussen teams. Echter, er zijn enkele nadelen, zoals mogelijke foutieve meldingen en configuratiecomplexiteit.
 
-Dit onderzoek heeft aangetoond dat SonarQube een waardevolle aanvulling kan zijn voor organisaties die streven naar efficiëntere, veiligere, en kwalitatief hoogwaardige softwareontwikkeling in een DevOps-context. Het biedt een effectieve manier om codekwaliteit en beveiliging te waarborgen, en de geïntegreerde benadering ondersteunt de DevOps-filosofie van continue verbetering. SonarQube is een onmisbaar instrument voor moderne DevOps-praktijken, waardoor betrouwbare en veilige softwareproducten kunnen worden geleverd.
+Dit onderzoek heeft aangetoond dat SonarQube een waardevolle aanvulling kan zijn voor organisaties die streven naar efficiëntere, veiligere, en kwalitatief hoogwaardige softwareontwikkeling in een DevOps-context. Het biedt een effectieve manier om codekwaliteit en beveiliging te waarborgen, en de geïntegreerde benadering ondersteunt de DevOps-filosofie van continue verbetering. SonarQube is een belangrijke tool voor moderne DevOps-praktijken, waardoor betrouwbare en veilige softwareproducten kunnen worden geleverd.
 
 ## Bronnen
 
-Hieronder is een lijst te vinden van bronnen die gebruikt zijn voor dit onderzoek. Deze bronnen zijn opgesteld in APA-stijl.
+Hieronder is een lijst te vinden van bronnen die gebruikt zijn voor dit onderzoek.
 
-- ChatGPT. (z.d.). ChatGPT. https://chat.openai.com/
-- SonarQube 10.2. (n.d.). Sonar Docs. https://docs.sonarsource.com/SonarQube/latest/
-- Team, A. (2022, April 11). How to Integrate Sonarqube into your CI/CD Workflow - Appcircle Blog. Appcircle Blog. https://blog.appcircle.io/article/how-to-integrate-sonarqube-into-your-ci-cd-workflow
-- Kaharovic, N. (2021, December 11). SonarQube - Get Started with Static Code Analysis! - Maestral - Medium. Medium. https://medium.com/maestral-solutions/sonarqube-get-started-with-static-code-analysis-dd0bd16f24e
-- Vogel, J. (n.d.). ICT Research Methods — Methods Pack for research in ICT. ICT Methods. https://ictresearchmethods.nl/
-- What is SonarQube? (2023, June 26). Koombea. https://www.koombea.com/blog/what-is-sonarqube/
-- Tanti, S. (2022). Sonarqube: What it is and why to use it? Knoldus Blogs. https://blog.knoldus.com/sonarqube-what-it-is-and-why-to-use-it/
+- ChatGPT.(2022, 30-11). ChatGPT. ChatGPT. Geraadpleegd op 6-11-2023, van https://chat.openai.com/.
+- SonarQube 10.2. (?, ?-?). SonarQube 10.2 Documentation. SonarSource. Geraadpleegd op 6-11-2023, van https://docs.sonarsource.com/SonarQube/latest/.
+- Team, A. (2022, 11-4). How to Integrate Sonarqube into your CI/CD Workflow - Appcircle Blog. Appcircle Blog. Geraadpleegd op 6-11-2023, van https://blog.appcircle.io/article/how-to-integrate-sonarqube-into-your-ci-cd-workflow.
+- Kaharovic, N. (2021, 11-12). SonarQube - Get Started with Static Code Analysis! - Maestral - Medium. Medium. Geraadpleegd op 6-11-2023, van https://medium.com/maestral-solutions/sonarqube-get-started-with-static-code-analysis-dd0bd16f24e.
+- Bonestroo, W.J., Meesters, M., Niels, R., Schagen, J.D., Henneke, L., Turnhout, K. van (2018). ICT Research Methods.HBO-i. Geraadpleegd op 6-11-2023, van https://ictresearchmethods.nl/.
+- What is SonarQube? (2023, 26-6). Koombea. Geraadpleegd op 6-11-2023, van https://www.koombea.com/blog/what-is-sonarqube/.
+- Tanti, S. (2022, 11-1). Sonarqube: What it is and why to use it? Knoldus Blogs. Geraadpleegd op 6-11-2023, van https://blog.knoldus.com/sonarqube-what-it-is-and-why-to-use-it/.
